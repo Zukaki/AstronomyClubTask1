@@ -45,7 +45,10 @@
       <div class="numbertext">2 / 3</div>
       <img src="./Images/img2.jpg" style="width:100%">
       <div class="text"><h2>Sky is the limit</h2>
-        <p>Have a look at this beautiful image🤩, capturing the Star trails, taken by our club member Ojas Sharma.</p></div>
+        <p>A black hole is a place in space where gravity pulls so much that even light can not get out. 
+            The gravity is so strong because matter has been squeezed into a tiny space. 
+            This can happen when a star is dying. Because no light can get out, people can't see black holes. 
+            They are invisible.</p></div>
     </div>
   
     <div class="mySlides fade">
@@ -77,17 +80,21 @@
     let slideIndex = 0;
     window.addEventListener("load",function() {
     showSlides(slideIndex);
-    myTimer = setInterval(function(){plusSlides(1)}, 5000);
+    myTimer = setInterval(function(){plusSlides(1)}, 7000);
     })
     
     function plusSlides(n) {
+      clearInterval(myTimer);
+    //   clearInterval(timer);
       showSlides(slideIndex += n);
+      timer=setInterval(function(){plusSlides(1)}, 7000);
     }
     
     function currentSlide(n) {
       clearInterval(myTimer);
+    //   clearInterval(timer);
       showSlides(slideIndex = n);
-      timer=setInterval(function(){plusSlides(1)}, 5000);
+      myTimer=setInterval(function(){plusSlides(1)}, 7000);
       
     }
     
@@ -120,8 +127,8 @@
     <h2 class="last_text" style="text-align:center; color:azure;">Follow us for regular updates.</h2>
     </section>
     <div class="footer-footer">
-    <marquee class="marquee"  behavior="scroll" hspace="20%" vspace="1.5%" direction="left" style="color:azure; font-weight: bold;">© 2021 Copyright:
-        <a class="text-white" href="https://www.linkedin.com/in/darshan-nikam-42b054203" target="_blank">Darshan Nikam,Eshan Jain</a></marquee>
+    <marquee class="marquee"  behavior="scroll" hspace="20%" vspace="1.5%" direction="left" style="color:azure; font-weight: bold;">© 2022 Copyright:
+        <a class="text-white" href="https://www.linkedin.com/in/jai-mehra-16a112131/" target="_blank">Jai Mehra</a></marquee>
     </div>
 </body>
 
